@@ -1,6 +1,7 @@
 {
   "name": "yomu",
   "version": "0.1.1",
+  "description": "The README explorer for node_modules.",
   "bin": {
     "yomu": "./cli/yomu.js"
   },
@@ -26,5 +27,6 @@
     "chalk": "^3.0.0",
     "cli-highlight": "^2.1.4",
     "meow": "^6.0.0"
-  }
+  },
+  "keywords": ["CLI", "cli"],
 }
