@@ -45,5 +45,5 @@ export const theme: any = {
   'template-variable': plain,
   addition: ctx.green,
   deletion: ctx.red,
-  default: plain,
+  default: plain
 }
