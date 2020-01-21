@@ -5,6 +5,7 @@ import { highlight } from 'cli-highlight'
 import { execSync } from 'child_process'
 import meow from 'meow'
 
+// FIXME: Improve logic (do not use child_process.execSync)
 function getRootDirectory(isGlobal: boolean): string {
   return execSync(`npm root${isGlobal ? ' -g' : ''}`)
     .toString()
