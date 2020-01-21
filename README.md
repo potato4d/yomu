@@ -16,6 +16,12 @@ $ npm i -g yomu
 $ yomu <package-name>
 ```
 
+### on global node_modules
+
+```bash
+$ yomu -g <package-name>
+```
+
 ### with less
 
 ```bash
