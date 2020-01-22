@@ -2,7 +2,7 @@
 
 > The README explorer for node_modules.
 
-[![Image from Gyazo](https://i.gyazo.com/d7772b6d638a2eee7c45cb4b410aa573.gif)](https://gyazo.com/d7772b6d638a2eee7c45cb4b410aa573)
+[![Image from Gyazo](https://i.gyazo.com/5790b3ee1822fdf380f3c3abf8398169.gif)](https://gyazo.com/5790b3ee1822fdf380f3c3abf8398169)
 
 ## Installation
 
