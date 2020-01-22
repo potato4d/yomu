@@ -22,8 +22,16 @@ async function readReadme(rootDirectory: string, packageName: string) {
   return file
 }
 
-function render(body: string) {
+function highlightRender(body: string) {
   console.log(highlight(body, { theme }))
+}
+
+function reader(body: string) {
+  console.log(body)
+}
+
+function isEnableColorOutput(colorType: string) {
+  return colorType !== 'never'
 }
 
 export async function exec(
@@ -40,6 +48,10 @@ export async function exec(
   }>['flags']
 ) {
   const fileBody = await readReadme(getRootDirectory(flags.global), packageName)
-  await render(fileBody)
+  if (isEnableColorOutput(flags.color)) {
+    highlightRender(fileBody)
+  } else {
+    reader(fileBody)
+  }
   process.exit(0)
 }
