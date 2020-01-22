@@ -33,6 +33,10 @@ export async function exec(
       type: 'boolean'
       alias: string
     }
+    color: {
+      type: 'string'
+      alias: string
+    }
   }>['flags']
 ) {
   const fileBody = await readReadme(getRootDirectory(flags.global), packageName)

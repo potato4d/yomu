@@ -9,12 +9,24 @@ const cli = meow(
 
   Global Scope
     $ yomu -g <package-name>
+
+  Disable syntax highlight
+    $ yomu -c never <package-name>
+    $ yomu --color never <package-name>
+  
+  Enable syntax highlight(explicitly)
+    $ yomu -c always <package-name>
+    $ yomu --color always <package-name>
 `,
   {
     flags: {
       global: {
         type: 'boolean',
         alias: 'g'
+      },
+      color: {
+        type: 'string',
+        alias: 'c'
       }
     }
   }
