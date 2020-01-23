@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0](https://github.com/potato4d/yomu/compare/v0.2.0...v0.3.0) (2020-01-23)
+
+
+### Features
+
+* Support no highlight output ([#5](https://github.com/potato4d/yomu/issues/5)) ([55f4dee](https://github.com/potato4d/yomu/commit/55f4deefabafde1f94085f7989584403451c25b9))
+
 ## [0.2.0](https://github.com/potato4d/yomu/compare/v0.1.2...v0.2.0) (2020-01-21)
 
 
