@@ -1,9 +1,8 @@
 import { promises as fs } from 'fs'
 import path from 'path'
-import { theme } from './config/theme'
-import { highlight } from 'cli-highlight'
 import { execSync } from 'child_process'
 import meow from 'meow'
+import { render } from './render'
 
 // FIXME: Improve logic (do not use child_process.execSync)
 function getRootDirectory(isGlobal: boolean): string {
@@ -22,10 +21,6 @@ async function readReadme(rootDirectory: string, packageName: string) {
   return file
 }
 
-function render(body: string) {
-  console.log(highlight(body, { theme }))
-}
-
 export async function exec(
   packageName: string,
   flags: meow.Result<{
@@ -33,9 +28,13 @@ export async function exec(
       type: 'boolean'
       alias: string
     }
+    plain: {
+      type: 'boolean'
+      alias: string
+    }
   }>['flags']
 ) {
   const fileBody = await readReadme(getRootDirectory(flags.global), packageName)
-  await render(fileBody)
+  render(fileBody, { isPlainText: flags.plain })
   process.exit(0)
 }
