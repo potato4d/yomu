@@ -1,0 +1,31 @@
+name: main
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [10.x]
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Cache node modules
+        id: cache
+        uses: actions/cache@v1
+        with:
+          path: node_modules
+          key: v1-dependencies-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            v1-dependencies-
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        if: steps.cache.outputs.cache-hit != 'true'
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: TypeScript Build
+        run: |
+          yarn
+          yarn build
