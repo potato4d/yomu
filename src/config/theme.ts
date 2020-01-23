@@ -1,9 +1,10 @@
 import chalk from 'chalk'
+import { Theme } from 'cli-highlight'
 const ctx = new chalk.Instance({ level: 3 })
 
 export const plain = (codePart: string) => codePart
 
-export const theme: any = {
+export const theme: Theme = {
   keyword: ctx.blue,
   built_in: ctx.cyan,
   type: ctx.cyan.dim,
