@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.1](https://github.com/potato4d/yomu/compare/v0.3.0...v0.3.1) (2020-01-24)
+
+
+### Features
+
+* Show how to use when not given arguments. ([#8](https://github.com/potato4d/yomu/issues/8)) ([6029986](https://github.com/potato4d/yomu/commit/6029986d084a842fd71733c42ef4593326756900))
+
 ## [0.3.0](https://github.com/potato4d/yomu/compare/v0.2.0...v0.3.0) (2020-01-23)
 
 
