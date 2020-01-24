@@ -7,7 +7,8 @@
   },
   "scripts": {
     "build": "tsc",
-    "test": "jest"
+    "test": "jest",
+    "format": "prettier './**/*.ts' --write"
   },
   "repository": "ssh://git@github.com/potato4d/yomu.git",
   "author": "Takuma HANATANI <mail@potato4d.me>",
