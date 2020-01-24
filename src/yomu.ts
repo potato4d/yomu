@@ -1,32 +1,10 @@
 #!/usr/bin/env node
-import meow from 'meow'
 import { exec } from './main'
+import { cli } from './cli'
 
-const cli = meow(
-  `
-  Usage
-    $ yomu <package-name>
-
-  Global Scope
-    $ yomu -g <package-name>
-    $ yomu --global <package-name>
-
-  Disable syntax highlight
-    $ yomu -p <package-name>
-    $ yomu --plain <package-name>
-`,
-  {
-    flags: {
-      global: {
-        type: 'boolean',
-        alias: 'g'
-      },
-      plain: {
-        type: 'boolean',
-        alias: 'p'
-      }
-    }
-  }
-)
+if (!cli.input[0]) {
+  cli.showHelp()
+  process.exit(0)
+}
 
 exec(cli.input[0], cli.flags)
