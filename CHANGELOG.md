@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.4.0](https://github.com/potato4d/yomu/compare/v0.3.1...v0.4.0) (2020-01-29)
+
+
+### Features
+
+* Support plain text readme ([#9](https://github.com/potato4d/yomu/issues/9)) ([2475e23](https://github.com/potato4d/yomu/commit/2475e2365e0cb2e903a8ee93810cadaee24dc5f6))
+
 ### [0.3.1](https://github.com/potato4d/yomu/compare/v0.3.0...v0.3.1) (2020-01-24)
 
 

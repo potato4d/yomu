@@ -1,6 +1,6 @@
 {
   "name": "yomu",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "The README explorer for node_modules.",
   "bin": {
     "yomu": "./cli/yomu.js"
