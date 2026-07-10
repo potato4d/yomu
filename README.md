@@ -22,6 +22,13 @@ $ yomu <package-name>
 $ yomu -g <package-name>
 ```
 
+### disable syntax highlight
+
+```bash
+$ yomu -p <package-name>
+$ yomu --plain <package-name>
+```
+
 ### with less
 
 ```bash
